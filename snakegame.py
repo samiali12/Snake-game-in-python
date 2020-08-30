@@ -170,7 +170,7 @@ def game_loop():
 
 	# if user break high score then snake of speed in increase
 
-	snake_speed = 5
+	snake_speed = 3
 
 
 		# check if file not exits
@@ -267,12 +267,12 @@ def game_loop():
 
 					GAME_OVER = True
 
-			if  abs(snake_axis_position - food_x) < 6 and abs(snake_yaxis_position  - food_y) < 6:
+			if  abs(snake_axis_position - food_x) < 8 and abs(snake_yaxis_position  - food_y) < 8:
 
-				food_x = random.randint(40,(SCREEN_WIDTH)/2)
-				food_y = random.randint(70,(SCREEN_HEIGHT)/2)
+				food_x = abs(random.randint(40,(SCREEN_WIDTH)/2))
+				food_y = abs(random.randint(80,(SCREEN_HEIGHT)/2))
 				score += 10
-				snake_length +=4
+				snake_length +=1
 
 				if score > int(high_score):
 					high_score = str(score)

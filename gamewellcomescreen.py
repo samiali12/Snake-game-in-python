@@ -25,7 +25,7 @@ def wellcome_snake():
 		msg_pos.center = (abs(570/2),abs(450/2))
 		screen.blit(msg,msg_pos)
 
-		repo_link = git_repo.render("Source Code at : git@github.com:samiali12/Snake-game-in-python.git",True,(0,0,0))
+		repo_link = git_repo.render("Source Code at : https://github.com/samiali12/Snake-game-in-python",True,(0,0,0))
 		repo_link_pos = repo_link.get_rect()
 		repo_link_pos.center = ( (210), (750)/2)
 		screen.blit(repo_link,repo_link_pos)
